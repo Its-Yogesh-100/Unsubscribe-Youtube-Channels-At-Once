@@ -45,19 +45,11 @@ This powerful script is crafted with the latest JavaScript technologies, ensurin
 * YouTube bulk unsubscribe fn.
 * Wrapping this in an IIFE for browser compatibility.
 
-*/<code>
+<code>
+   
 (async function iife() {
     // This is the time delay after which the "unsubscribe" button is "clicked"; Change it as per your need!
-    var UNSUBSCRIBE_DELAY_TIME = 2000
-    /**
-    
-    * Delay runner. Wraps `setTimeout` so it can be `await`ed on.
-    
-    * @param {Function} fn
-    
-    * @param {number} delay
-    
-    */
+    var UNSUBSCRIBE_DELAY_TIME =1000
     var runAfterDelay = (fn, delay) => new Promise((resolve, reject) => {
       setTimeout(() => {
         fn()
@@ -81,6 +73,8 @@ This powerful script is crafted with the latest JavaScript technologies, ensurin
       }, UNSUBSCRIBE_DELAY_TIME)
     }
   })()
+
+  
   </code>
 
 ## Important Note
